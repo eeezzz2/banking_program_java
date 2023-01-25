@@ -80,16 +80,16 @@ the Insertion Sort Algorithm. After sorting, print a neatly formatted table of t
 alphabetical order. Create and use method printAcctsByNameSortKey() to do this.<br>
 The program then allows the user to select from the following menu of transactions:<br>
 Select one of the following:<br><br>
-W - Withdrawal
-D - Deposit
-C - Clear Check
-N - New account (NOTE: the ArrayList of Accounts will grow when you create a new Account)
-B - Balance
-I - Account Info (without transaction history) (NOTE: include at least one depositor who has multiple accounts)
-H - Account Info plus Account Transaction History
-S - Close Account (close (shut), but do not delete the account) (Note: no transactions are allowed on a closed account)
-R - Reopen a closed account
-X - Delete Account (close and delete the account from the database)) (NOTE: must have zero balance to delete)
+W - Withdrawal<br>
+D - Deposit<br>
+C - Clear Check<br>
+N - New account (NOTE: the ArrayList of Accounts will grow when you create a new Account)<br>
+B - Balance<br>
+I - Account Info (without transaction history) (NOTE: include at least one depositor who has multiple accounts)<br>
+H - Account Info plus Account Transaction History<br>
+S - Close Account (close (shut), but do not delete the account) (Note: no transactions are allowed on a closed account)<br>
+R - Reopen a closed account<br>
+X - Delete Account (close and delete the account from the database)) (NOTE: must have zero balance to delete)<br>
 Q - Quit<br><br>
 Note 1: The Clear Check transaction is only valid for checking accounts. It is like a withdrawal; except, you must also check the
 date of the check. You may only clear a check if the date on the check is no more than six months ago. No post-dated
@@ -104,19 +104,19 @@ print out an error message and repeat the prompt). Once the user has entered a v
 appropriate methods (in the class that contains the main() method) should be called to perform the specific transaction. These
 methods will call the class implemented methods as necessary.<br>
 At the end, before the user quits, the program prints the contents of the final database four ways:<br><br>
-a) unsorted
-b) sorted by account number (using the QuickSort Algorithm)
-c) sorted by SSN (using the Bubble Sort Algorithm)
-d) sorted alphabetically (using the Insertion Sort Algorithm)
-Invalid operations are to be handled by exceptions. You should minimally implement the following exceptions:
-InvalidAccountException
-InvalidAmountException
-AccountClosedException
-InsufficientFundsException
-InvalidMenuSelectionException
-PostDatedCheckException
-CheckTooOldException
-AccountNotCheckingAccountException
+a) unsorted<br>
+b) sorted by account number (using the QuickSort Algorithm)<br>
+c) sorted by SSN (using the Bubble Sort Algorithm)<br>
+d) sorted alphabetically (using the Insertion Sort Algorithm)<br>
+Invalid operations are to be handled by exceptions. You should minimally implement the following exceptions:<br><br>
+InvalidAccountException<br>
+InvalidAmountException<br>
+AccountClosedException<br>
+InsufficientFundsException<br>
+InvalidMenuSelectionException<br>
+PostDatedCheckException<br>
+CheckTooOldException<br>
+AccountNotCheckingAccountException<br>
 CDMaturityDateException<br><br>
 All exceptions are to be handled within the Bank Class except for the InvalidMenuSelectionException which is to be
 handled within main().<br>
@@ -126,32 +126,32 @@ Make sure to use enough test cases so as to completely test program functionalit
 Make sure that there is at least one depositor that has multiple accounts at the bank.<br>
 Make sure that there is at least two depositors with the same last name and different first names.<br>
 Notes:<br><br>
-1. All output must be file directed (i.e., sent to an output file)
-2. Only output must go to the file - not interactive prompts and menus.
-3. No global variables are allowed
-4. The program and all methods must be properly commented.
-5. All data members of classes are to be private (or protected when providing subclass access)
-6. All I/O should be done within the methods of the class that contains the main() method.
+1. All output must be file directed (i.e., sent to an output file)<br>
+2. Only output must go to the file - not interactive prompts and menus.<br>
+3. No global variables are allowed<br>
+4. The program and all methods must be properly commented.<br>
+5. All data members of classes are to be private (or protected when providing subclass access)<br>
+6. All I/O should be done within the methods of the class that contains the main() method.<br>
 <br><br>
-The initial database of Accounts should be printed as follows:
-a) unsorted
-b.1) sorted by account number (using the QuickSort Algorithm - using sort key acctNumQuickSortKey)
-b.2) sorted by account number (using the Bubble Sort Algorithm - using sort key acctNumBubbleSortKey)
-b.3) sorted by account number (using the Insertion Sort Algorithm - using sort key acctNumInsertionSortKey)
-c.1) sorted by SSN (using the QuickSort Algorithm - using sort key ssnQuickSortKey)
-c.2) sorted by SSN (using the Bubble Sort Algorithm - using sort key ssnBubbleSortKey)
-c.3) sorted by SSN (using the Insertion Sort Algorithm - using sort key ssnInsertionSortKey)
-d.1) sorted by Name (using the QuickSort Algorithm - using sort key nameQuickSortKey)
-d.2) sorted by Name (using the Bubble Sort Algorithm - using sort key nameBubbleSortKey)
-d.3) sorted by Name (using the Insertion Sort Algorithm - using sort key nameInsertionSortKey)
-At the end, before the user quits, the program prints the contents of the final database as follows:
-a) unsorted
-b.1) sorted by account number (using the QuickSort Algorithm - using sort key acctNumQuickSortKey)
-b.2) sorted by account number (using the Bubble Sort Algorithm - using sort key acctNumBubbleSortKey)
-b.3) sorted by account number (using the Insertion Sort Algorithm - using sort key acctNumInsertionSortKey)
-c.1) sorted by SSN (using the QuickSort Algorithm - using sort key ssnQuickSortKey)
-c.2) sorted by SSN (using the Bubble Sort Algorithm - using sort key ssnBubbleSortKey)
-c.3) sorted by SSN (using the Insertion Sort Algorithm - using sort key ssnInsertionSortKey)
-d.1) sorted by Name (using the QuickSort Algorithm - using sort key nameQuickSortKey)
-d.2) sorted by Name (using the Bubble Sort Algorithm - using sort key nameBubbleSortKey)
-d.3) sorted by Name (using the Insertion Sort Algorithm - using sort key nameInsertionSortKey)
+The initial database of Accounts should be printed as follows:<br><br>
+a) unsorted<br>
+b.1) sorted by account number (using the QuickSort Algorithm - using sort key acctNumQuickSortKey)<br>
+b.2) sorted by account number (using the Bubble Sort Algorithm - using sort key acctNumBubbleSortKey)<br>
+b.3) sorted by account number (using the Insertion Sort Algorithm - using sort key acctNumInsertionSortKey)<br>
+c.1) sorted by SSN (using the QuickSort Algorithm - using sort key ssnQuickSortKey)<br>
+c.2) sorted by SSN (using the Bubble Sort Algorithm - using sort key ssnBubbleSortKey)<br>
+c.3) sorted by SSN (using the Insertion Sort Algorithm - using sort key ssnInsertionSortKey)<br>
+d.1) sorted by Name (using the QuickSort Algorithm - using sort key nameQuickSortKey)<br>
+d.2) sorted by Name (using the Bubble Sort Algorithm - using sort key nameBubbleSortKey)<br>
+d.3) sorted by Name (using the Insertion Sort Algorithm - using sort key nameInsertionSortKey)<br><br>
+At the end, before the user quits, the program prints the contents of the final database as follows:<br><br>
+a) unsorted<br>
+b.1) sorted by account number (using the QuickSort Algorithm - using sort key acctNumQuickSortKey)<br>
+b.2) sorted by account number (using the Bubble Sort Algorithm - using sort key acctNumBubbleSortKey)<br>
+b.3) sorted by account number (using the Insertion Sort Algorithm - using sort key acctNumInsertionSortKey)<br>
+c.1) sorted by SSN (using the QuickSort Algorithm - using sort key ssnQuickSortKey)<br>
+c.2) sorted by SSN (using the Bubble Sort Algorithm - using sort key ssnBubbleSortKey)<br>
+c.3) sorted by SSN (using the Insertion Sort Algorithm - using sort key ssnInsertionSortKey)<br>
+d.1) sorted by Name (using the QuickSort Algorithm - using sort key nameQuickSortKey)<br>
+d.2) sorted by Name (using the Bubble Sort Algorithm - using sort key nameBubbleSortKey)<br>
+d.3) sorted by Name (using the Insertion Sort Algorithm - using sort key nameInsertionSortKey)<br>
